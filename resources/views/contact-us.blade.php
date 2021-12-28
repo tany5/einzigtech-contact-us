@@ -33,8 +33,14 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label name="name">Email</label>
+                                    <label name="email">Email</label>
                                     <x-form-input type="email" name="email" class="form-control"
+                                        placeholder="Your Email Address" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label name="subjec">Subject</label>
+                                    <x-form-input type="email" name="subjec" class="form-control"
                                         placeholder="Your Email Address" />
                                 </div>
                             </x-form>
