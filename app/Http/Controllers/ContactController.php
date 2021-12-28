@@ -59,7 +59,7 @@ class ContactController extends Controller
         {
             $contactformdate->file = $fileName;
         }
-
+        $contactformdate->save();
         return back()->with('success', "Thnakyou For Contacting Us, We Will Contact You Soon...");
     }
 
