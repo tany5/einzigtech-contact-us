@@ -18,7 +18,14 @@ class ContactController extends Controller
 
         for($i=0; $i<=59; $i++)
         {
-            $minute[$i] = $i;
+            if($i< 10)
+            {
+                $minute[$i] = '0'.$i;
+            }
+            else {
+                $minute[$i] = $i;
+            }
+
         }
         return view('contact-us', compact('hour', 'minute'));
     }
