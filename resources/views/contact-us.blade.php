@@ -54,13 +54,18 @@
 
                                 <div class="form-group">
                                     <label name="subjec">Subject</label>
-                                    <x-form-input type="email" name="subjec" class="form-control"
-                                        placeholder="Your Email Address" />
+                                    <x-form-input type="text" name="subjec" class="form-control"
+                                        placeholder="Your Subject" />
                                 </div>
                                 <div class="form-group">
                                     <label name="message">Message</label>
                                     <x-form-textarea name="message" placeholder="Your Message" class="form-control">
                                     </x-form-textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label name="date">Date</label>
+                                    <x-form-input type="text" name="date" class="form-control"
+                                        placeholder="Your Email Address" id="datepicker" />
                                 </div>
                             </x-form>
                         </div>
@@ -83,6 +88,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+        <script type="text/javascript">
+            $('#datepicker').datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: 'dd/mm/yyyy'
+            });
+            $('#datepicker').datepicker("setDate", new Date());
 
+        </script>
+</body>
 </html>
