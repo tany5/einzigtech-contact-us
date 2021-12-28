@@ -16,6 +16,8 @@ class ContactController extends Controller
         for($i=0; $i<=12; $i++){
             array_push($hour, $i);
         }
+
+        return view('contact-us', compact('hour'));
     }
 
 }
