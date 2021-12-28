@@ -27,7 +27,7 @@ class ContactController extends Controller
             }
         }
         $timeFormat = array('AM' => 'AM', 'PM' => 'PM');
-        return view('contact-us', compact('hour', 'minute'));
+        return view('contact-us', compact('hour', 'minute', 'timeFormat'));
     }
 
 }
