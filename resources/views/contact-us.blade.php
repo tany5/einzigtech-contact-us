@@ -72,6 +72,10 @@
                                         <div class="col-md-4">
                                             <x-form-select name="hour" :options="$hour" label="Select Hour" class="form-control" />
                                         </div>
+
+                                        <div class="col-md-4">
+                                            <x-form-select name="minute" :options="$minute" label="Select Minutes" class="form-control" />
+                                        </div>
                                     </div>
                                 </div>
                             </x-form>
