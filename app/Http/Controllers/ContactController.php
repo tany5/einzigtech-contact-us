@@ -31,7 +31,16 @@ class ContactController extends Controller
     }
 
     public function saveContactForm(Request $request) {
-
+        $request->validate([
+            'name'      => 'require',
+            'email'     => 'require|email',
+            'subject'   => 'require',
+            'message'   => 'require',
+            'date'      => 'require',
+            'hour'      => 'require',
+            'minute'    => 'require',
+            'format'    => 'require',
+        ]);
     }
 
 }
