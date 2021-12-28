@@ -12,7 +12,7 @@ class ContactController extends Controller
 
     public function hours() {
         $hour = array();
-        for($i=0; $i<=12; $i++){
+        for($i=1; $i<=12; $i++){
             $hour[$i] = $i;
         }
 
@@ -28,6 +28,10 @@ class ContactController extends Controller
         }
         $timeFormat = array('AM' => 'AM', 'PM' => 'PM');
         return view('contact-us', compact('hour', 'minute', 'timeFormat'));
+    }
+
+    public function saveContactForm(Request $request) {
+
     }
 
 }
