@@ -20,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get("/contact-us", [ContactController::class, 'contact']);
+Route::get("/contact-us", [ContactController::class, 'hours']);

@@ -67,6 +67,13 @@
                                     <x-form-input type="text" name="date" class="form-control"
                                         placeholder="Your Email Address" id="datepicker" />
                                 </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <x-form-select name="hour" :options="$hour" label="Select your interests" multiple />
+                                        </div>
+                                    </div>
+                                </div>
                             </x-form>
                         </div>
                     </div>
