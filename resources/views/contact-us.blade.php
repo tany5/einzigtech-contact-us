@@ -31,6 +31,12 @@
                                     <x-form-input type="text" name="name" class="form-control"
                                         placeholder="Your Name" />
                                 </div>
+
+                                <div class="form-group">
+                                    <label name="name">Email</label>
+                                    <x-form-input type="email" name="email" class="form-control"
+                                        placeholder="Your Email Address" />
+                                </div>
                             </x-form>
                         </div>
                     </div>
