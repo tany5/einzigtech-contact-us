@@ -25,8 +25,8 @@ class ContactController extends Controller
             else {
                 $minute[$i] = $i;
             }
-
         }
+        $timeFormat = array('AM' => 'AM', 'PM' => 'PM');
         return view('contact-us', compact('hour', 'minute'));
     }
 
