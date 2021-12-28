@@ -70,7 +70,7 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <x-form-select name="hour" :options="$hour" label="Select your interests" multiple />
+                                            <x-form-select name="hour" :options="$hour" label="Select your interests" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
