@@ -12,13 +12,18 @@
         integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact Us</title>
+    <style>
+        .block {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
     <section style="padding-top: 60px;">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-8 mx-auto">
                     <div class="card">
                         <div class="card-header">
                             <h1>Contact Us</h1>
