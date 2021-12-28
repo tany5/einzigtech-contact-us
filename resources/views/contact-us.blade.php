@@ -24,7 +24,14 @@
                             <h1>Contact Us</h1>
                         </div>
                         <div class="card-body">
-
+                            <x-form enctype="multipart/form-data">
+                                @csrf
+                                <div class="form-group">
+                                    <label name="name">Name</label>
+                                    <x-form-input type="text" name="name" class="form-control"
+                                        placeholder="Your Name" />
+                                </div>
+                            </x-form>
                         </div>
                     </div>
                 </div>
