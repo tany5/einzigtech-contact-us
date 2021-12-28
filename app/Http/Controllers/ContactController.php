@@ -48,7 +48,7 @@ class ContactController extends Controller
             $fileName = time().'.'.$request->file->extension();
             $request->file->move(public_path('uploads'), $fileName);
         }
-        $newdate = $request->date.' '.$request->hour.' '.$request->minute.' '.$request->format;
+        $newdate = $request->date.' '.$request->hour.':'.$request->minute.' '.$request->format;
         $contactformdate = new Contactformdata;
         $contactformdate->name = $request->name;
         $contactformdate->email = $request->email;
