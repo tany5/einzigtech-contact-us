@@ -51,6 +51,10 @@
                                     <x-form-input type="email" name="subjec" class="form-control"
                                         placeholder="Your Email Address" />
                                 </div>
+                                <div class="form-group">
+                                    <label name="message">Message</label>
+                                    <x-form-textarea name="message" placeholder="Your Message" class="form-control"></x-form-textarea>
+                                </div>
                             </x-form>
                         </div>
                     </div>
