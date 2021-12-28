@@ -48,6 +48,8 @@ class ContactController extends Controller
             $request->file->move(public_path('uploads'), $fileName);
         }
 
+        $contactformdate = new Contactformdata;
+
         return back()->with('success', "Thnakyou For Contacting Us, We Will Contact You Soon...");
     }
 
