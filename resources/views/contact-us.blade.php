@@ -38,7 +38,7 @@
                             <h1>Contact Us</h1>
                         </div>
                         <div class="card-body">
-                            <x-form enctype="multipart/form-data">
+                            <x-form action="{{route('contact-send')}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
                                     <label name="name">Name</label>
