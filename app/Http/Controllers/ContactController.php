@@ -41,6 +41,12 @@ class ContactController extends Controller
             'minute'    => 'require',
             'format'    => 'require',
         ]);
+
+        if($request->has('file'))
+        {
+            $fileName = time().'.'.$request->file->extension();
+            $request->file->move(public_path('uploads'), $fileName);
+        }
     }
 
 }
