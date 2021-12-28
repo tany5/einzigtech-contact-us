@@ -47,6 +47,8 @@ class ContactController extends Controller
             $fileName = time().'.'.$request->file->extension();
             $request->file->move(public_path('uploads'), $fileName);
         }
+
+        return back()->with('success', "Thnakyou For Contacting Us, We Will Contact You Soon...");
     }
 
 }
