@@ -24,6 +24,9 @@
         .form-group .mt-4 {
             margin-top: 0px !important;
         }
+        .text-red-500{
+            color: red;
+        }
 
     </style>
 </head>
@@ -54,8 +57,8 @@
 
                                 <div class="form-group">
                                     <label name="subjec">Subject</label>
-                                    <x-form-input type="text" name="subjec" class="form-control"
-                                        placeholder="Your Subject" />
+                                    <x-form-input type="text" name="subject" class="form-control"
+                                        placeholder="Subject" />
                                 </div>
                                 <div class="form-group">
                                     <label name="message">Message</label>

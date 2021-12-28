@@ -32,14 +32,14 @@ class ContactController extends Controller
 
     public function saveContactForm(Request $request) {
         $request->validate([
-            'name'      => 'require',
-            'email'     => 'require|email',
-            'subject'   => 'require',
-            'message'   => 'require',
-            'date'      => 'require',
-            'hour'      => 'require',
-            'minute'    => 'require',
-            'format'    => 'require',
+            'name'      => 'required',
+            'email'     => 'required|email',
+            'subject'   => 'required',
+            'message'   => 'required',
+            'date'      => 'required',
+            'hour'      => 'required',
+            'minute'    => 'required',
+            'format'    => 'required',
         ]);
 
         if($request->has('file'))
