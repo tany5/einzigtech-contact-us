@@ -41,6 +41,14 @@
                             <h1>Contact Us</h1>
                         </div>
                         <div class="card-body">
+                            @if($message = Session::get("success"))
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>{{$message}}</strong>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            @endif
                             <x-form action="{{route('contact-send')}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
