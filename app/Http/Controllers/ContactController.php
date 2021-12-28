@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contactformdata;
 
 class ContactController extends Controller
 {
@@ -47,8 +48,17 @@ class ContactController extends Controller
             $fileName = time().'.'.$request->file->extension();
             $request->file->move(public_path('uploads'), $fileName);
         }
-
+        $newdate = $request->date.' '.$request->hour.' '.$request->minute.' '.$request->format;
         $contactformdate = new Contactformdata;
+        $contactformdate->name = $request->name;
+        $contactformdate->email = $request->email;
+        $contactformdate->subject = $request->subject;
+        $contactformdate->message = $request->message;
+        $contactformdate->datetime = $newdate;
+        if($request->has('file'))
+        {
+            $contactformdate->file = $fileName;
+        }
 
         return back()->with('success', "Thnakyou For Contacting Us, We Will Contact You Soon...");
     }
