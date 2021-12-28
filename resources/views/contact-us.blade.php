@@ -23,6 +23,9 @@
                         <div class="card-header">
                             <h1>Contact Us</h1>
                         </div>
+                        <div class="card-body">
+
+                        </div>
                     </div>
                 </div>
             </div>
