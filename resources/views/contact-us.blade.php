@@ -82,6 +82,13 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <label name="file">File</label>
+                                    <x-form-input type="file" name="file" class="form-control btn btn-danger" />
+                                </div>
+
+                                <x-form-submit>Submit Contact Form</x-form-submit>
                             </x-form>
                         </div>
                     </div>
